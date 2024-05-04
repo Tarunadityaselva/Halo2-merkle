@@ -1,0 +1,15 @@
+[package]
+name = "Halo2-merkle"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+sha2 = "0.10.6"
+rand = "0.8.5"
+env_logger = "0.10"
+clap = { version = "4.1", features = ["derive"] }
+
+//KZG instead of the usual IPA that ships with zcash's version of halo2
+halo2_proofs = { git = "https://github.com/privacy-scaling-explorations/halo2.git" }
+halo2_gadgets = { git = "https://github.com/privacy-scaling-explorations/halo2.git" }
+halo2curves = { git = "https://github.com/privacy-scaling-explorations/halo2curves.git" }
